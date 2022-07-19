@@ -4,7 +4,6 @@ from flask import Flask, render_template, request
 
 from wayscript import context
 
-# App Logic
 app = Flask(__name__)
 
 @app.route('/404') 
