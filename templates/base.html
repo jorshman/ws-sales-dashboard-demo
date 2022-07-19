@@ -30,7 +30,7 @@
       <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
           <!-- Sidebar - Brand -->
-          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('example_sb_admin_home') }}">
+          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url_for('index') }}">
               <div class="sidebar-brand-icon rotate-n-15">
                   <i class="fas fa-laugh-wink"></i>
               </div>
@@ -58,7 +58,7 @@
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div class="bg-white py-2 collapse-inner rounded">
                       <h6 class="collapse-header">Custom Components:</h6>
-                      <a class="collapse-item" href="{{ url_for('index') }}">Submit new form</a>
+                      <a class="collapse-item" href="{{ url_for('database_form') }}">Submit new form</a>
                   </div>
               </div>
           </li>
@@ -73,7 +73,7 @@
 
           <!-- Nav Item - Pages Collapse Menu -->
           <li class="nav-item">
-              <a class="nav-link collapsed" href="{{ url_for('example_sb_admin_home') }}" data-toggle="collapse" data-target="#collapsePages"
+              <a class="nav-link collapsed" href="{{ url_for('index') }}" data-toggle="collapse" data-target="#collapsePages"
                   aria-expanded="true" aria-controls="collapsePages">
                   <i class="fas fa-fw fa-folder"></i>
                   <span> Full SB ADMIN Template</span>
@@ -81,7 +81,7 @@
               <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                   <div class="bg-white py-2 collapse-inner rounded">
                       <h6 class="collapse-header">Login Screens:</h6>
-                      <a class="collapse-item" href="{{ url_for('example_sb_admin_home') }}">SB Admin Template Page</a>
+                      <a class="collapse-item" href="{{ url_for('index') }}">SB Admin Template Page</a>
                       <div class="collapse-divider"></div>
                       <h6 class="collapse-header">Other Pages:</h6>
                       <a class="collapse-item" href="{{ url_for('not_found') }}">404 Page</a>
@@ -91,7 +91,7 @@
 
           <!-- Nav Item - Charts -->
           <li class="nav-item">
-              <a class="nav-link" href="{{ url_for('charts') }}">
+              <a class="nav-link" href="{{ url_for('index') }}">
                   <i class="fas fa-fw fa-chart-area"></i>
                   <span>Example Charts Page</span></a>
           </li>

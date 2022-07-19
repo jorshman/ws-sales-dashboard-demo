@@ -22,10 +22,14 @@ def submit_form():
     result = 'Success!'
     return render_template('submit_form.html', selected_database = database_name, result = result)
 
-@app.route('/')
-def index():
+def get_current_user(request):
     application_key = request.headers.get('Authorization')[7:]
     user = context.get_user_by_application_key(application_key)
+    return user
+
+@app.route('/')
+def index():
+    user = get_current_user(request)
     first_name = user['first_name']
     return render_template('example.html',first_name=first_name)
 
