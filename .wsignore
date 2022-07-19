@@ -1,0 +1,8 @@
+# WayScript recommended defaults
+node_modules
+**/node_modules
+.DS_STORE
+**/.DS_Store
+__pycache__
+# end WayScript recommended defaults
+.git
